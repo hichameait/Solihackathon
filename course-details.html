@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details - InnovBridge</title>
+    <link rel="stylesheet" href="./assets/css/dash.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="/" class="logo">InnovBridge</a>
+        <div class="beta-tag">Bridge</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="dashbord.html" class="nav-link">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+          </svg>
+          Dashboard
+        </a>
+      </div>
+    </nav>
+
+    <div class="course-details-page">
+      <div class="course-hero">
+        <img
+          src=""
+          alt="Course Image"
+          class="course-hero-image"
+          id="courseImage"
+        />
+        <div class="course-hero-overlay">
+          <div class="course-logo" id="courseLogo"></div>
+          <h1 class="course-title" id="courseTitle"></h1>
+          <div class="course-category" id="courseCategory"></div>
+        </div>
+      </div>
+
+      <div class="course-content">
+        <div class="course-description" id="courseDescription"></div>
+
+        <div class="course-stats">
+          <div class="stat">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span id="courseDuration">8 hours</span>
+          </div>
+          <div class="stat">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span id="courseLessons">24 lessons</span>
+          </div>
+        </div>
+
+        <div class="course-actions">
+          <button class="btn-test">Begin Test</button>
+          <button class="btn-start">Start Course</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/course-details.js"></script>
+  </body>
+</html>
