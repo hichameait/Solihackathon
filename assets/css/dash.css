@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    background-color: #151929;
+    color: white;
+    font-family: "poppins";
+}
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e2235;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.filter select {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #2a2f47;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter select:hover {
+    border-color: #4c7cff;
+}
+
+.filter select:focus {
+    border-color: #4c7cff;
+    box-shadow: 0 0 4px #4c7cff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #151929;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+.beta-tag {
+    background-color: #00E676;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #aaa;
+    font-size: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.course-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.course-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.course-logo {
+    margin-bottom: 16px;
+    width: 60px;
+    height: 60px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.course-category {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.lock-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-tag {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: #00E676;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Card specific backgrounds */
+.time-card {
+    background: linear-gradient(to right, #FF4C4C, #3D1919);
+}
+
+.english-card {
+    background: linear-gradient(to right, #4C7CFF, #192A3D);
+}
+
+.figma-card {
+    background: linear-gradient(to right, #E24CFF, #3D193D);
+}
+
+.success-card {
+    background: linear-gradient(to right, #4CFF84, #193D22);
+}
+
+.webflow-card {
+    background: linear-gradient(to right, #C14CFF, #2A193D);
+}
+
+.logo-card {
+    background: linear-gradient(to right, #4CCEFF, #192E3D);
+}
