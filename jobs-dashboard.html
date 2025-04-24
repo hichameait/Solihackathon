@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs Dashboard - InnovBridge</title>
+    <link rel="stylesheet" href="./assets/css/jobs-dash.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="./landingpage.html" class="logo">InnovBridge</a>
+        <div class="beta-tag">Bridge</div>
+      </div>
+
+      <div class="nav-links">
+        <div class="nav-link">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+          </svg>
+          <a href="./dashbord.html">Courses</a>
+        </div>
+
+        <div class="nav-link active">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Jobs
+        </div>
+
+        <div class="nav-link">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          Support
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <div class="nav-link">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="3"></circle>
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+            ></path>
+          </svg>
+          Settings
+        </div>
+        <div class="nav-link">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          Log Out
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="filter-container">
+        <div class="filter">
+          <label for="job-filter">Filter by Category:</label>
+          <select id="job-filter">
+            <option value="all">All Categories</option>
+            <option value="tech">Technology</option>
+            <option value="marketing">Marketing</option>
+            <option value="design">Design</option>
+            <option value="business">Business</option>
+            <option value="finance">Finance</option>
+            <option value="education">Education</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="jobs-container">
+        <!-- Software Developer Job Card -->
+        <div class="job-card" data-category="tech">
+          <div class="job-content">
+            <div class="company-logo">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Tech Company Logo"
+              />
+            </div>
+            <div class="job-details">
+              <h3 class="job-title">Senior Software Developer</h3>
+              <p class="company-name">Tech Solutions Inc.</p>
+              <div class="job-meta">
+                <span class="location">Remote</span>
+                <span class="salary">$90,000 - $120,000</span>
+                <span class="type">Full-time</span>
+              </div>
+              <div class="job-description">
+                Looking for an experienced software developer to join our team.
+                Must have strong experience in JavaScript, React, and Node.js.
+              </div>
+              <div class="job-requirements">
+                <span class="requirement">5+ years experience</span>
+                <span class="requirement">React</span>
+                <span class="requirement">Node.js</span>
+              </div>
+              <div class="job-actions">
+                <button class="btn-apply">Apply Now</button>
+                <button class="btn-save">Save Job</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing Manager Job Card -->
+        <div class="job-card" data-category="marketing">
+          <div class="job-content">
+            <div class="company-logo">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Marketing Company Logo"
+              />
+            </div>
+            <div class="job-details">
+              <h3 class="job-title">Digital Marketing Manager</h3>
+              <p class="company-name">Growth Marketing Agency</p>
+              <div class="job-meta">
+                <span class="location">New York, NY</span>
+                <span class="salary">$80,000 - $100,000</span>
+                <span class="type">Full-time</span>
+              </div>
+              <div class="job-description">
+                Seeking a creative and data-driven marketing manager to lead our
+                digital marketing campaigns and drive business growth.
+              </div>
+              <div class="job-requirements">
+                <span class="requirement">4+ years experience</span>
+                <span class="requirement">SEO</span>
+                <span class="requirement">Social Media</span>
+              </div>
+              <div class="job-actions">
+                <button class="btn-apply">Apply Now</button>
+                <button class="btn-save">Save Job</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
