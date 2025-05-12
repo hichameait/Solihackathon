@@ -1,2 +1,2 @@
 # Solihackathon
-Solihackathon web devlopment
+SoliHackathon web development
